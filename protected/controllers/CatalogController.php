@@ -77,6 +77,32 @@ class CatalogController extends Controller
         return $this->_model;
     }
 
+    public function actionImport()
+    {
+        $dirname = realpath('./!/').DIRECTORY_SEPARATOR;
+        $targetDirname = realpath('./!!/').DIRECTORY_SEPARATOR;
+
+        $products = Product::model()->findAll();
+
+        foreach ($products as $p) {
+            $filepath = iconv('utf-8', 'cp1251', $dirname.$p->image_url);
+            //print $filepath.'<br/>';
+            if (file_exists($filepath)) {
+                $content = file_get_contents($filepath);
+                print strlen($content).'<br/>';
+                $filename = sha1(rand(100,10000)*microtime(true));
+                $ext = 'jpg';
+
+                $targetFilepath = $targetDirname.$filename.'.'.$ext;
+                //file_put_contents($targetFilepath, $content);
+
+                //$p->title = $filename.'.'.$ext;
+                //$p->save();
+                //print $p->image_url.'<br/>';
+            }
+        }
+    }
+
     // -----------------------------------------------------------
     // Uncomment the following methods and override them if needed
     /*

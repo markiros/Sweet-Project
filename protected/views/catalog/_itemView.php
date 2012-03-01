@@ -12,13 +12,12 @@
     <?php echo CHtml::encode($data->articul); ?>
     <br />
 
-    <b><?php echo CHtml::encode($data->getAttributeLabel('image_url')); ?>:</b>
-    <?php echo CHtml::encode($data->image_url); ?>
-    <br />
-
     <b><?php echo CHtml::encode($data->getAttributeLabel('price')); ?>:</b>
     <?php echo CHtml::encode($data->price); ?>
     <br />
+
+    <img width="300" style="max-width:100%;" src="/uploaded/product/<?php echo CHtml::encode($data->image_big); ?>"/>
+
 
 
 </div>

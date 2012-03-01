@@ -1,641 +1,75 @@
-2012/02/28 03:09:51 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Moscow' for 'MSK/4.0/no DST' instead (/ebsmnt/web/markiros.com/sweet/protected/views/layouts/main.php:50)
+2012/02/29 22:52:52 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/ebsmnt/web/markiros.com/sweet/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /ebsmnt/web/library/Yii/framework/web/CAssetManager.php:116
 Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
-#1 /ebsmnt/web/library/Yii/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
-#2 /ebsmnt/web/library/Yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
-#3 /ebsmnt/web/library/Yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
-#4 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(207): CContentDecorator->run()
-#5 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(301): SiteController->endWidget()
-#6 /ebsmnt/web/markiros.com/sweet/protected/views/layouts/column1.php(5): SiteController->endContent()
-#7 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(127): require()
-#8 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
-#9 /ebsmnt/web/library/Yii/framework/web/CController.php(785): SiteController->renderFile()
-#10 /ebsmnt/web/markiros.com/sweet/protected/controllers/SiteController.php(32): SiteController->render()
-#11 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
-#12 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#13 /ebsmnt/web/library/Yii/framework/web/CController.php(287): SiteController->runAction()
-#14 /ebsmnt/web/library/Yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
-#15 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): SiteController->run()
-#16 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#17 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#18 /ebsmnt/web/markiros.com/sweet/index.php(13): CWebApplication->run()
-REQUEST_URI=/
-in /ebsmnt/web/markiros.com/sweet/protected/views/layouts/main.php (50)
-in /ebsmnt/web/markiros.com/sweet/protected/views/layouts/column1.php (5)
-in /ebsmnt/web/markiros.com/sweet/protected/controllers/SiteController.php (32)
-2012/02/28 03:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "catalog/index".' in /ebsmnt/web/library/Yii/framework/web/CWebApplication.php:280
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('catalog/index')
-#1 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#2 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/index.php?r=catalog/index
----
-2012/02/28 03:27:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "catalog/index".' in /ebsmnt/web/library/Yii/framework/web/CWebApplication.php:280
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('catalog/index')
-#1 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#2 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/index.php?r=catalog/index
----
-2012/02/28 03:27:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /ebsmnt/web/library/Yii/framework/web/CWebApplication.php:280
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#1 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#2 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:28:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /ebsmnt/web/library/Yii/framework/web/CWebApplication.php:280
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#1 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#2 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:28:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /ebsmnt/web/library/Yii/framework/web/CWebApplication.php:280
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#1 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#2 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:29:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:31:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:31:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:31:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:31:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:32:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:32:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:32:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:32:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:32:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:32:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:33:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:33:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:35:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:35:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:35:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:35:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:35:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:35:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:36:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:37:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:37:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:39:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:40:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:40:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:40:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:40:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:40:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:40:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:42:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:42:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2012/02/28 03:53:10 [error] [php] include(Product.php): failed to open stream: No such file or directory (/ebsmnt/web/library/Yii/framework/YiiBase.php:418)
-Stack trace:
-#0 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(12): spl_autoload_call()
-#1 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionIndex()
-#2 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#3 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CatalogController->runAction()
-#4 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CatalogController->runActionWithFilters()
-#5 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CatalogController->run()
-#6 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#7 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#8 /ebsmnt/web/markiros.com/sweet/index.php(13): CWebApplication->run()
-REQUEST_URI=/index.php?r=catalog
-in /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php (12)
-in /ebsmnt/web/markiros.com/sweet/index.php (13)
-2012/02/28 03:53:11 [error] [php] include(Product.php): failed to open stream: No such file or directory (/ebsmnt/web/library/Yii/framework/YiiBase.php:418)
-Stack trace:
-#0 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(12): spl_autoload_call()
-#1 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionIndex()
-#2 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#3 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CatalogController->runAction()
-#4 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CatalogController->runActionWithFilters()
-#5 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CatalogController->run()
-#6 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#7 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#8 /ebsmnt/web/markiros.com/sweet/index.php(13): CWebApplication->run()
-REQUEST_URI=/index.php?r=catalog
-in /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php (12)
-in /ebsmnt/web/markiros.com/sweet/index.php (13)
-2012/02/28 03:59:11 [error] [php] array_slice() expects parameter 1 to be array, null given (/ebsmnt/web/library/Yii/framework/web/CArrayDataProvider.php:86)
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/zii/widgets/CBaseListView.php(105): CArrayDataProvider->getData()
-#1 /ebsmnt/web/library/Yii/framework/zii/widgets/CListView.php(173): CListView->init()
-#2 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(148): CListView->init()
-#3 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(173): CatalogController->createWidget()
-#4 /ebsmnt/web/markiros.com/sweet/protected/views/catalog/index.php(18): CatalogController->widget()
-#5 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(127): require()
-#6 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(96): CatalogController->renderInternal()
-#7 /ebsmnt/web/library/Yii/framework/web/CController.php(870): CatalogController->renderFile()
-#8 /ebsmnt/web/library/Yii/framework/web/CController.php(783): CatalogController->renderPartial()
-#9 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(26): CatalogController->render()
-#10 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionIndex()
-#11 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#12 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CatalogController->runAction()
-#13 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CatalogController->runActionWithFilters()
-#14 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CatalogController->run()
-#15 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#16 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#17 /ebsmnt/web/markiros.com/sweet/index.php(13): CWebApplication->run()
-REQUEST_URI=/index.php?r=catalog/index
-in /ebsmnt/web/markiros.com/sweet/protected/views/catalog/index.php (18)
-in /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php (26)
-in /ebsmnt/web/markiros.com/sweet/index.php (13)
-2012/02/28 03:59:39 [error] [php] array_slice() expects parameter 1 to be array, null given (/ebsmnt/web/library/Yii/framework/web/CArrayDataProvider.php:86)
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/zii/widgets/CBaseListView.php(105): CArrayDataProvider->getData()
-#1 /ebsmnt/web/library/Yii/framework/zii/widgets/CListView.php(173): CListView->init()
-#2 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(148): CListView->init()
-#3 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(173): CatalogController->createWidget()
-#4 /ebsmnt/web/markiros.com/sweet/protected/views/catalog/index.php(18): CatalogController->widget()
-#5 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(127): require()
-#6 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(96): CatalogController->renderInternal()
-#7 /ebsmnt/web/library/Yii/framework/web/CController.php(870): CatalogController->renderFile()
-#8 /ebsmnt/web/library/Yii/framework/web/CController.php(783): CatalogController->renderPartial()
-#9 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(26): CatalogController->render()
-#10 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionIndex()
-#11 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#12 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CatalogController->runAction()
-#13 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CatalogController->runActionWithFilters()
-#14 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CatalogController->run()
-#15 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#16 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#17 /ebsmnt/web/markiros.com/sweet/index.php(13): CWebApplication->run()
-REQUEST_URI=/index.php?r=catalog/index
-in /ebsmnt/web/markiros.com/sweet/protected/views/catalog/index.php (18)
-in /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php (26)
-in /ebsmnt/web/markiros.com/sweet/index.php (13)
-2012/02/28 03:59:40 [error] [php] array_slice() expects parameter 1 to be array, null given (/ebsmnt/web/library/Yii/framework/web/CArrayDataProvider.php:86)
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/zii/widgets/CBaseListView.php(105): CArrayDataProvider->getData()
-#1 /ebsmnt/web/library/Yii/framework/zii/widgets/CListView.php(173): CListView->init()
-#2 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(148): CListView->init()
-#3 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(173): CatalogController->createWidget()
-#4 /ebsmnt/web/markiros.com/sweet/protected/views/catalog/index.php(18): CatalogController->widget()
-#5 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(127): require()
-#6 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(96): CatalogController->renderInternal()
-#7 /ebsmnt/web/library/Yii/framework/web/CController.php(870): CatalogController->renderFile()
-#8 /ebsmnt/web/library/Yii/framework/web/CController.php(783): CatalogController->renderPartial()
-#9 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(26): CatalogController->render()
-#10 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionIndex()
-#11 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#12 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CatalogController->runAction()
-#13 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CatalogController->runActionWithFilters()
-#14 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CatalogController->run()
-#15 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#16 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#17 /ebsmnt/web/markiros.com/sweet/index.php(13): CWebApplication->run()
-REQUEST_URI=/index.php?r=catalog/index
-in /ebsmnt/web/markiros.com/sweet/protected/views/catalog/index.php (18)
-in /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php (26)
-in /ebsmnt/web/markiros.com/sweet/index.php (13)
-2012/02/28 04:00:18 [error] [php] array_slice() expects parameter 1 to be array, null given (/ebsmnt/web/library/Yii/framework/web/CArrayDataProvider.php:86)
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/zii/widgets/CBaseListView.php(105): CArrayDataProvider->getData()
-#1 /ebsmnt/web/library/Yii/framework/zii/widgets/CListView.php(173): CListView->init()
-#2 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(148): CListView->init()
-#3 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(173): CatalogController->createWidget()
-#4 /ebsmnt/web/markiros.com/sweet/protected/views/catalog/index.php(18): CatalogController->widget()
-#5 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(127): require()
-#6 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(96): CatalogController->renderInternal()
-#7 /ebsmnt/web/library/Yii/framework/web/CController.php(870): CatalogController->renderFile()
-#8 /ebsmnt/web/library/Yii/framework/web/CController.php(783): CatalogController->renderPartial()
-#9 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(26): CatalogController->render()
-#10 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionIndex()
-#11 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#12 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CatalogController->runAction()
-#13 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CatalogController->runActionWithFilters()
-#14 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CatalogController->run()
-#15 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#16 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#17 /ebsmnt/web/markiros.com/sweet/index.php(13): CWebApplication->run()
-REQUEST_URI=/index.php?r=catalog/index
-in /ebsmnt/web/markiros.com/sweet/protected/views/catalog/index.php (18)
-in /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php (26)
-in /ebsmnt/web/markiros.com/sweet/index.php (13)
-2012/02/28 04:06:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "product".' in /ebsmnt/web/library/Yii/framework/web/CController.php:484
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(271): CController->missingAction('product')
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('product')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('catalog/product')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=catalog/product
----
-2012/02/28 04:06:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "product".' in /ebsmnt/web/library/Yii/framework/web/CController.php:484
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(271): CController->missingAction('product')
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('product')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('catalog/product')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=catalog/product
----
-2012/02/28 04:07:05 [error] [php] array_slice() expects parameter 1 to be array, null given (/ebsmnt/web/library/Yii/framework/web/CArrayDataProvider.php:86)
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/zii/widgets/CBaseListView.php(105): CArrayDataProvider->getData()
-#1 /ebsmnt/web/library/Yii/framework/zii/widgets/CListView.php(173): CListView->init()
-#2 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(148): CListView->init()
-#3 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(173): CatalogController->createWidget()
-#4 /ebsmnt/web/markiros.com/sweet/protected/views/catalog/index.php(12): CatalogController->widget()
-#5 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(127): require()
-#6 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(96): CatalogController->renderInternal()
-#7 /ebsmnt/web/library/Yii/framework/web/CController.php(870): CatalogController->renderFile()
-#8 /ebsmnt/web/library/Yii/framework/web/CController.php(783): CatalogController->renderPartial()
-#9 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(26): CatalogController->render()
-#10 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionIndex()
-#11 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#12 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CatalogController->runAction()
-#13 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CatalogController->runActionWithFilters()
-#14 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CatalogController->run()
-#15 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#16 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#17 /ebsmnt/web/markiros.com/sweet/index.php(13): CWebApplication->run()
-REQUEST_URI=/index.php?r=catalog
-in /ebsmnt/web/markiros.com/sweet/protected/views/catalog/index.php (12)
-in /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php (26)
-in /ebsmnt/web/markiros.com/sweet/index.php (13)
-2012/02/28 04:08:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /ebsmnt/web/library/Yii/framework/web/CController.php:484
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CController.php(271): CController->missingAction('view')
-#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('view')
-#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('catalog/view')
-#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=catalog/view&id=1
-HTTP_REFERER=http://sweet.markiros.com/index.php?r=catalog
----
-2012/02/28 04:08:58 [error] [exception.CException] exception 'CException' with message 'CatalogController and its behaviors do not have a method or closure named "loadModel".' in /ebsmnt/web/library/Yii/framework/base/CComponent.php:266
-Stack trace:
-#0 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(21): CComponent->__call('loadModel', Array)
-#1 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(21): CatalogController->loadModel()
-#2 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionView()
-#3 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('view')
-#7 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('catalog/view')
-#8 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#10 {main}
-REQUEST_URI=/index.php?r=catalog/view&id=1
-HTTP_REFERER=http://sweet.markiros.com/index.php?r=catalog
----
-2012/02/28 04:09:26 [error] [exception.CException] exception 'CException' with message 'Property "CatalogController._model" is not defined.' in /ebsmnt/web/library/Yii/framework/base/CComponent.php:131
-Stack trace:
-#0 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(27): CComponent->__get('_model')
-#1 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(21): CatalogController->loadModel()
-#2 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionView()
-#3 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('view')
-#7 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('catalog/view')
-#8 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#10 {main}
-REQUEST_URI=/index.php?r=catalog/view&id=1
-HTTP_REFERER=http://sweet.markiros.com/index.php?r=catalog
----
-2012/02/28 04:10:03 [error] [exception.CException] exception 'CException' with message 'Property "CatalogController._model" is not defined.' in /ebsmnt/web/library/Yii/framework/base/CComponent.php:131
-Stack trace:
-#0 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(27): CComponent->__get('_model')
-#1 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(21): CatalogController->loadModel()
-#2 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionView()
-#3 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('view')
-#7 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('catalog/view')
-#8 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#10 {main}
-REQUEST_URI=/index.php?r=catalog/view&id=1
-HTTP_REFERER=http://sweet.markiros.com/index.php?r=catalog
----
-2012/02/28 04:10:05 [error] [exception.CException] exception 'CException' with message 'Property "CatalogController._model" is not defined.' in /ebsmnt/web/library/Yii/framework/base/CComponent.php:131
-Stack trace:
-#0 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(27): CComponent->__get('_model')
-#1 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(21): CatalogController->loadModel()
-#2 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionView()
-#3 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('view')
-#7 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('catalog/view')
-#8 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
-#10 {main}
-REQUEST_URI=/index.php?r=catalog/view&id=1
-HTTP_REFERER=http://sweet.markiros.com/index.php?r=catalog
----
-2012/02/28 04:15:16 [error] [exception.CException] exception 'CException' with message 'Property "CDetailView.itemView" is not defined.' in /ebsmnt/web/library/Yii/framework/base/CComponent.php:174
-Stack trace:
-#0 /ebsmnt/web/library/Yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemView', '_detail')
-#1 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(CatalogController), 'zii.widgets.CDe...', Array)
-#2 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CDe...', Array)
-#3 /ebsmnt/web/markiros.com/sweet/protected/views/catalog/view.php(25): CBaseController->widget('zii.widgets.CDe...', Array)
-#4 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(127): require('/ebsmnt/web/mar...')
-#5 /ebsmnt/web/library/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/ebsmnt/web/mar...', Array, true)
-#6 /ebsmnt/web/library/Yii/framework/web/CController.php(870): CBaseController->renderFile('/ebsmnt/web/mar...', Array, true)
-#7 /ebsmnt/web/library/Yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
-#8 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(27): CController->render('view', Array)
-#9 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionView()
+#0 /ebsmnt/web/library/Yii/framework/web/CAssetManager.php(101): CAssetManager->setBasePath('/ebsmnt/web/mar...')
+#1 /ebsmnt/web/library/Yii/framework/web/CAssetManager.php(219): CAssetManager->getBasePath()
+#2 /ebsmnt/web/library/Yii/framework/web/CClientScript.php(449): CAssetManager->publish('/ebsmnt/web/lib...')
+#3 /ebsmnt/web/library/Yii/framework/web/CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 /ebsmnt/web/library/Yii/framework/web/CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 /ebsmnt/web/library/Yii/framework/web/CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 /ebsmnt/web/library/Yii/framework/web/CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 /ebsmnt/web/library/Yii/framework/web/CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 /ebsmnt/web/markiros.com/sweet/protected/controllers/SiteController.php(66): CController->render('contact', Array)
+#9 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
 #10 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
 #11 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
 #12 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('view')
-#14 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('catalog/view')
+#13 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('contact')
+#14 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/contact')
 #15 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
 #16 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
 #17 {main}
-REQUEST_URI=/index.php?r=catalog/view&id=1
-HTTP_REFERER=http://sweet.markiros.com/index.php?r=catalog/index
+REQUEST_URI=/index.php?r=site/contact
+HTTP_REFERER=http://sweet.markiros.com/index.php?r=site/page&view=about
+---
+2012/03/01 01:32:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
+Stack trace:
+#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
+#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
+#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+HTTP_REFERER=http://sweet.markiros.com/index.php?r=gii
+---
+2012/03/01 01:32:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
+Stack trace:
+#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
+#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
+#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+HTTP_REFERER=http://sweet.markiros.com/index.php?r=gii
+---
+2012/03/01 01:49:39 [error] [exception.CException] exception 'CException' with message 'Alias "ext.yiiext.behaviors.model.trees.NestedSetBehavior" is invalid. Make sure it points to an existing PHP file.' in /ebsmnt/web/library/Yii/framework/YiiBase.php:318
+Stack trace:
+#0 /ebsmnt/web/library/Yii/framework/YiiBase.php(198): YiiBase::import('ext.yiiext.beha...', true)
+#1 /ebsmnt/web/library/Yii/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /ebsmnt/web/library/Yii/framework/base/CComponent.php(298): CComponent->attachBehavior('nestedSetBehavi...', Array)
+#3 /ebsmnt/web/library/Yii/framework/db/ar/CActiveRecord.php(380): CComponent->attachBehaviors(Array)
+#4 /ebsmnt/web/markiros.com/sweet/protected/models/Category.php(16): CActiveRecord::model('Category')
+#5 /ebsmnt/web/markiros.com/sweet/protected/controllers/CatalogController.php(17): Category::model()
+#6 /ebsmnt/web/library/Yii/framework/web/actions/CInlineAction.php(50): CatalogController->actionIndex()
+#7 /ebsmnt/web/library/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /ebsmnt/web/library/Yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /ebsmnt/web/library/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('catalog')
+#12 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=catalog
+---
+2012/03/01 21:35:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /ebsmnt/web/library/Yii/framework/gii/GiiModule.php:165
+Stack trace:
+#0 /ebsmnt/web/library/Yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(276): CController->run('')
+#2 /ebsmnt/web/library/Yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
+#3 /ebsmnt/web/library/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /ebsmnt/web/markiros.com/sweet/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+HTTP_REFERER=http://sweet.markiros.com/index.php?r=gii
 ---

@@ -14,9 +14,12 @@ class CatalogController extends Controller
 
     public function actionIndex()
     {
-        $dataProvider=new CActiveDataProvider('Product');
+        $categories = Category::model()->findAll(array('order'=>'lft'));
+
+        $dataProvider = new CActiveDataProvider('Product');
         $this->render('index',array(
             'dataProvider'=>$dataProvider,
+            'categories' => $categories,
         ));
     }
 

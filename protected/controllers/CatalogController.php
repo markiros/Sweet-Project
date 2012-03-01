@@ -12,11 +12,48 @@ class CatalogController extends Controller
         $this->render('list');
     }
 
+    public function actionInsert()
+    {
+        $cars = Category::model()->findByPk(1);
+        $node = Category::model()->findByPk(2);
+        $node->moveAsFirst($cars);
+    }
+
     public function actionIndex()
     {
-        $dataProvider=new CActiveDataProvider('Product');
+        //$categories = Category::model()->findAll(array('order'=>'lft'));
+        $root_id = 1;
+        $categories = Category::model()->findAll(array(
+            'condition'=>'root=:root_id',
+            'order'=>'lft',
+            'params'=>array(':root_id'=>$root_id),
+        ));
+
+        //$category = Category::model()->findByPk(1);
+        //$categories = $category->descendants()->findAll();
+
+        /*
+        $fruits = Category::model()->findByPk(1);
+        $audi = Category::model()->findByPk(9);
+        $audi->moveAsFirst($fruits);
+        */
+        /*
+        $category1 = new Category;
+        $category1->title = 'Ford';
+        $category2 = new Category;
+        $category2->title = 'Mercedes';
+        $category3 = new Category;
+        $category3->title = 'Audi';
+        $root = Category::model()->findByPk(3);
+        $category1->appendTo($root);
+        $category2->insertAfter($category1);
+        $category3->insertBefore($category1);
+        */
+
+        $dataProvider = new CActiveDataProvider('Product');
         $this->render('index',array(
             'dataProvider'=>$dataProvider,
+            'categories' => $categories,
         ));
     }
 

@@ -20,7 +20,7 @@ $this->breadcrumbs=array(
             }
         }
         echo CHtml::openTag('li');
-        echo CHtml::encode($category->title);
+        echo CHtml::encode($category->title).' ('.$category->id.')';
         $level=$category->level;
     }
     for ($i=$level;$i;$i--) {
